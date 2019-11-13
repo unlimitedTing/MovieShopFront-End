@@ -1,0 +1,50 @@
+<div class="slides">
+    <ngb-carousel *ngIf="movies">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper" >
+                <img [src]="movies[0].backdropUrl" alt="Random first slide" >
+            </div>
+            <div class="carousel-caption">
+                <h3>{{movies[0].title}}</h3>
+                <p>{{movies[0].overview}}</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper" >
+                <img [src]="movies[1].backdropUrl" alt="Random first slide" >
+            </div>
+            <div class="carousel-caption">
+                <h3>{{movies[1].title}}</h3>
+                <p>{{movies[1].overview}}</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper" >
+                <img [src]="movies[2].backdropUrl" alt="Random first slide" >
+            </div>
+            <div class="carousel-caption">
+                <h3>{{movies[2].title}}</h3>
+                <p>{{movies[2].overview}}</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper" >
+                <img [src]="movies[3].backdropUrl" alt="Random first slide" >
+            </div>
+            <div class="carousel-caption">
+                <h3>{{movies[3].title}}</h3>
+                <p>{{movies[3].overview}}</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper" >
+                <img [src]="movies[4].backdropUrl" alt="Random first slide" >
+            </div>
+            <div class="carousel-caption">
+                <h3>{{movies[4].title}}</h3>
+                <p>{{movies[4].overview}}</p>
+            </div>
+        </ng-template>
+
+    </ngb-carousel>
+</div>
